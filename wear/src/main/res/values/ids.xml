@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnWalking" type="id" />
+    <item name="btnRunning" type="id" />
+    <item name="btnCycling" type="id" />
+    <item name="txtTime" type="id" />
+    <item name="txtErrors" type="id" />
+    <item name="txtErrorProfile" type="id" />
+</resources>

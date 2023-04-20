@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="485dp"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imgExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_exit" />
+
+
+    <TextView
+        android:id="@+id/txtInsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgExit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif-monospace"
+        android:text="IMPORTANT INSTRUCTION"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtInsTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:src="@drawable/ic_profile"/>
+    <TextView
+        android:id="@+id/txtProfileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgProfile"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtDescriptionProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter at least once your details\n in the profile page before starting an activity."
+        android:layout_below="@+id/txtProfileLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imgProgress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_progress_vector"
+            android:gravity="center"
+            android:layout_below="@+id/txtDescriptionProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtActivityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgProgress"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtDescriptionProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtActivityLabel"
+        android:layout_centerHorizontal="true"
+        android:text="Please open the app on your phone and\n visit the profile page to store your activities\n before pressing the done button on the\n watch app after finishing an exercise session." />
+    <TextView
+        android:id="@+id/txtDescriptionProgress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Once you are at the profile page, you can then\n press the done button on the watch app."
+        android:textStyle="bold"
+        android:layout_below="@+id/txtDescriptionProgress"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imgSteps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_shoes"
+        android:gravity="center"
+        android:layout_below="@+id/txtDescriptionProgress2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtStepsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Steps"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgSteps"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtDescriptionStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The number of steps displayed on the home page corresponds to the daily steps you performed\n while using the app for walking and running."
+        android:layout_below="@+id/txtStepsLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

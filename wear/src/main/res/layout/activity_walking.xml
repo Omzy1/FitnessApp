@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".WalkingActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_boxedEdges="all"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtStartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txtStopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStopTitle"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/txtTimerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStopTitle"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/txtHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txtHeartRateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_alignParentRight="true"
+            android:textSize="8sp"
+            android:layout_marginTop="27dp"/>
+
+        <TextView
+            android:id="@+id/txtStepDetector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtStepDetectorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="9dp" />
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStepDetector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txtDistanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStepDetector"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="9dp"
+            android:layout_marginTop="27dp"/>
+        <TextView
+            android:id="@+id/txtCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeartRate"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txtCaloriesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeartRate"
+            android:textSize="9dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="27dp"/>
+
+
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/corners_buttons"
+            android:backgroundTint="#000000"
+            android:src="@drawable/ic_play" />
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_gravity="bottom|center"
+        >
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_stop_circle_24"
+            android:backgroundTint="#0ABAB5"
+            android:background="@drawable/corners_buttons"
+            android:visibility="gone"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center"
+            android:insetTop="5dp"
+            android:insetBottom="5dp"
+            />
+
+
+    </FrameLayout>
+
+
+</androidx.wear.widget.BoxInsetLayout>

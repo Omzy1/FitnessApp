@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="PROGRESS"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+          />
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="10dp"
+
+        >
+        <Button
+            android:id="@+id/btnWalking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:textSize="20sp"
+            android:background="@drawable/layout_corners_shape"
+            android:layout_marginLeft="60dp"
+            android:textColor="?android:textColorPrimary"
+
+           />
+        <Button
+            android:id="@+id/btnRunning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:textSize="20sp"
+            android:background="@drawable/layout_corners_shape"
+            android:layout_marginLeft="10dp"
+            android:textColor="?android:textColorPrimary"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search_corner"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search by Date Here ..." />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/activities_items"
+       android:layout_below="@id/searchView1"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/activities_items"
+        android:layout_below="@id/searchView1"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
